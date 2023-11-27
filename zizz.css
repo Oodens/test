@@ -1,0 +1,123 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    
+}
+.imgt {
+    height: 70px;
+    width: 70px;
+    margin-left: 50px;
+
+}
+
+header {
+    height: 8vh;
+    display: flex;
+    background-color: #137065;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 25px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #ffffff;
+    padding: 0 20px;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+.main-section {
+    padding: 20px;
+    text-align: center;
+    color: white;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+
+}
+.page {
+    background-image: url(1643273158_41-phonoteka-org-p-fon-dlya-programmi-43.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+
+}
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+.yep {
+    text-decoration-line: none ;
+    color: white;
+    background-color: rgba(127, 255, 212, 0.077);
+    border-radius: 20px;
+}
+.parent {
+    height: 100vh;
+    width: 100%;
+    
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    flex-direction: row;
+    text-decoration-line: none ;
+    color: white;
+}
+.child {
+    margin: 30px 50px 50px 0;
+    padding: 20px;
+    width: 500px;
+    background-color: #137065;
+    display: flex ;
+    flex-direction: column;
+    text-align: center;
+    text-decoration-line: none ;
+    color: white;
+    height: 50vh;
+}
+.da {
+    text-decoration-line: none ;
+    color: white;
+}
+.ile {
+    height: 36vh;
+}
+#image-container,#image-container1,#image-container2,#image-container3,#image-container4,#image-container5,#image-container6,#image-container7{
+    position: relative;
+    display: inline-block;
+}
+
+#image-container img, #image-container1 img, #image-container2 img, #image-container3 img, #image-container4 img, #image-container5 img, #image-container6 img, #image-container7 img {
+    transition: transform 0.3s ease-in-out;
+    width: 30vw;
+}
+
+#text-overlay, #text-overlay1, #text-overlay2, #text-overlay3, #text-overlay4, #text-overlay5, #text-overlay6, #text-overlay7 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+}
+.lio {
+    color: rgb(247, 255, 1);
+}

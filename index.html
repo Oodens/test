@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Школьный сайт</title>
+    <link rel="stylesheet" href="zizz.css">
+</head>
+
+<body> 
+    <div class="page">
+    <header>
+       <div class="logo">
+           <a href="#"> <img src="logo.png" alt="" class="imgt"></a>
+        </div>
+        <nav>
+            <ul class="fof">
+                <li><a href="" class="lio">Главная</a></li>
+                <li><a href="zo.html">Рaсписание</a></li>
+                <li><a href="Untitled-1.html">Учителя</a></li>
+                <li><a href="class.html">Классы</a></li>
+                <li><a href="contact.html">Контакты</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="main-section">
+        <h1>Добро пожаловать на наш школьный сайт</h1>
+        <p>Здесь вы найдете информацию о наших учителях, расписании занятий, классах и многое другое.</p>
+        <a href="#parent" class="yep" onclick="scrollToSection('#parent')">Узнать больше</a>
+    </section>
+    </div>
+    <div class="parent" id="parent">
+            <div id="image-container"  onmouseover="rotateImage()" onmouseout="resetImage()">
+                <a href="Untitled-1.html">
+                    <img src="professor.png" alt="Your Image" width="500px" height="450px">
+                <div id="text-overlay">Достижения Предподавтелей</div >
+                </a>
+                
+              </div>
+              <div id="image-container2" onmouseover="rotateImage2()" onmouseout="resetImage2()">
+                <a href="shkola.html"><img src="school.jpg.crdownload" alt="Your Image" width="300px" height="450px">
+                <div id="text-overlay2">О Школе</div>
+              </div></a>
+        
+        <div id="image-container1" onmouseover="rotateImage1()" onmouseout="resetImage1()">
+          <a href="stud.html">
+            <img src="Достижения.png" alt="Your Image" width="100px" height="450px">
+            <div id="text-overlay1">Достижения Учеников</div>
+          </a>
+          </div>
+        
+          <div id="image-container3"  onmouseover="rotateImage3()" onmouseout="resetImage3()">
+            <a href="zo.html"><img src="6752706.png" alt="Your Image" width="300px" height="450px">
+            <div id="text-overlay3">Росписание Классов</div></a>
+       </div>
+    </div>
+    <script>
+        function rotateImage() {
+          var image = document.querySelector('#image-container img');
+          var textOverlay = document.querySelector('#text-overlay');
+          image.style.transform = 'rotateY(180deg)';
+          textOverlay.style.opacity = 1;
+        }
+        function resetImage() {
+          var image = document.querySelector('#image-container img');
+          var textOverlay = document.querySelector('#text-overlay');
+          image.style.transform = 'rotateY(0deg)';
+          textOverlay.style.opacity = 0;
+        }
+        function rotateImage1() {
+          var image = document.querySelector('#image-container1 img');
+          var textOverlay = document.querySelector('#text-overlay1');
+          image.style.transform = 'rotateY(180deg)';
+          textOverlay.style.opacity = 1;
+        }
+        function resetImage1() {
+          var image = document.querySelector('#image-container1 img');
+          var textOverlay = document.querySelector('#text-overlay1');
+          image.style.transform = 'rotateY(0deg)';
+          textOverlay.style.opacity = 0;
+        }
+        function rotateImage2() {
+          var image = document.querySelector('#image-container2 img');
+          var textOverlay = document.querySelector('#text-overlay2');
+          image.style.transform = 'rotateY(180deg)';
+          textOverlay.style.opacity = 1;
+        }
+        function resetImage2() {
+          var image = document.querySelector('#image-container2 img');
+          var textOverlay = document.querySelector('#text-overlay2');
+          image.style.transform = 'rotateY(0deg)';
+          textOverlay.style.opacity = 0;
+        }
+        function rotateImage3() {
+          var image = document.querySelector('#image-container3 img');
+          var textOverlay = document.querySelector('#text-overlay3');
+          image.style.transform = 'rotateY(180deg)';
+          textOverlay.style.opacity = 1;
+        }
+        function resetImage3() {
+          var image = document.querySelector('#image-container3 img');
+          var textOverlay = document.querySelector('#text-overlay3');
+          image.style.transform = 'rotateY(0deg)';
+          textOverlay.style.opacity = 0;
+        }
+      </script>
+      <script src="zizzz.js"></script>
+</body>
+
+</html>
